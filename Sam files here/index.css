@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    
+    nav{
+    
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        height: 65px;
+        line-height: 65px;
+    }
+    
+    nav .wrapper{
+    position: relative;
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items:center ;
+    justify-content:space-between ;
+    
+    
+    }
+    .wrapper .logo a{
+    color: rgb(29, 30, 31);
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+    
+    
+    }
+    
+    .wrapper .nav-links{
+        display: inline-flex;
+    }
+    
+    .nav-links li{
+        list-style: none;
+    }
+
+    .nav-links li a{
+    color: rgb(7, 11, 20);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    }
+    
+    .nav-links li a:hover{
+       
+        background-color:rgb(239, 139, 24);
+    }
+    
+    
+    .nav-links .drop-meanu{
+    background-color:white ;
+    width: 180px;
+    top:65px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    }
+    
+    .nav-links li:hover .drop-meanu,
+    .nav-links li:hover .mega-box{
+        top: 65px; 
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease ;
+    }
+    
+    
+    .drop-meanu li a{
+        width: 100%;
+        display: block;
+        padding: 0 0 0 15px;
+        font-weight: 400px;
+        border-radius:0px ;
+        color: black;
+    
+    
+    }
+    
+    .mega-box{
+    position:  absolute;
+    top:80px;
+    width: 100%;
+   /* 100% and margin auto */
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    
+    }
+
+    
+    .mega-box .content{
+        background: white;
+        /* padding: 25px 20px ; */
+       display: flex;
+       width: 80%;
+       /* border: 1px red solid; */
+       display: flex;
+       justify-content: space-evenly;
+       margin-left: 30%;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       /* padding-left: 500px; */
+    
+    }
+    
+    .content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+    text-align:center;
+    
+    }
+    .content .row header{
+    color: black;
+    font-size:20px ;
+    font-weight: 500;
+    /* text-align: center;
+    padding-right: 500px; */
+    
+    }
+    
+    .content .row header:hover{
+
+      border-bottom:1px orangered solid ;
+    }
+
+
+
+    .content .row .mega-links{
+    margin-left: -40px;
+    border-left:1px solid rgba(255, 255, 255, 0.09) ;
+    
+    
+    }
+    
+    .row .mega-links li a{
+    padding: 0 20px;
+    color: rgb(139, 145, 159);
+    /* font-size: 15px; */
+    display: block;
+    
+    
+    }
+    
+    
+    #employer{
+    background-color: white;
+    border: none;
+    color: rgb(135, 139, 148);
+    font-size: large;
+    
+    
+    }
+    #logo2{
+       width: 15px;
+       height: 15px;
+      margin-left: 0%;
+      margin-right: 0%;
+
+    }
+    .content .row header>h6{
+        display: inline;
+        color: rgb(10, 9, 9);
+    }
+
+     
+    #login{
+        background:white;
+        color: rgb(58, 142, 215);
+        border: 1px rgb(65, 148, 220) solid ; 
+        font-size: 18px;
+        font-weight: 500px;
+        height: 30px;
+        width: 75px;
+        border-radius: 40px;
+      
+    }
+
+    #login>a:hover{
+        background: rgb(61, 145, 220);
+        color: white;
+        border: 1px rgb(56, 134, 203) solid ; 
+        border-radius: 40px;
+        height: 30px;
+    }
+
+    #register{
+        background:hsl(11,100%,67%);
+        color: hsl(0,0%,100%);
+        border: 1px hsl(11,100%,67%) solid ; 
+        font-size: 18px;
+        font-weight: 500px;
+        height: 30px;
+        width: 98px;
+        border-radius: 40px;
+        margin-right:10px ;
+    }
+
+    #register>a:hover{
+         
+        background: white;
+        color: rgb(253, 121, 91);
+        border: 1px rgb(248, 119, 90) solid ; 
+        border-radius: 40px;
+        height: 30px;
+
+
+    }
+
+    div>h1{
+       margin-top: 100px;
+       text-align: center;
+       font-family: 'Roboto-slab';
+       font-weight: 700;
+       font-size:36px;
+       color-scheme: black;
+    }
+
+    p{
+      color: gray;
+      font-weight: 100;
+      text-align: center;
+     } 
+
+    #map{
+       margin-right:20px
+        
+    }
+       /* ..........................................dream on....................................................... */
+    /* h1{
+       margin-top: 100px;
+       text-align: center;
+       font-family: 'Roboto-slab';
+       font-weight: 700;
+       font-size:36px;
+    }
+
+    p{
+      color: gray;
+      font-weight: 100;
+      text-align: center;
+     } */
+    /* ........................................Search bar css done................................................. */
+    #sear{
+      width: 1000px;
+      display: flex;
+      margin: auto;
+      margin-top: 30px;
+      border-radius:40px ;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      margin-bottom: 30px;
+      background-color: aliceblue;
+     }
+
+     #sear input:nth-child(1){
+      border-top-left-radius:40px ;
+      border-bottom-left-radius:40px ;
+     }
+    #sear input:nth-child(1),  #sear input:nth-child(2){
+      border-right:1px gray solid ;
+    }
+
+    #sear input{
+      all: unset;
+      width: 300px;
+      height: 55px;
+      border: none;
+      font-size: 17ox;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    #sear>button{
+      width: 100px;
+      height: 40px;
+      border-radius: 40px;
+      background-color: hsl(208,81%,58%);
+      color: white;
+      border:none;
+      margin-top: 8px;
+      margin-right: 8px;
+    }
+    /* .............................buttons here..................................... */
+   #btd_sc{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+
+   }
+   #btm_sc{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+    margin-top: 25px;;
+   }
+    #btn_sc{
+    display:flex;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap:10px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius:15px ;
+    border:rgb(17, 196, 236)
+}
+#btn_sc>img{
+    width:40px;
+    margin:auto;
+    
+}
+
+#btn_sc>h3{
+    text-align: center;
+    margin:auto;
+    line-height: 10px;
+}
+#btn_sc>h3>h2{
+    display:flex;
+   
+    justify-content: center;
+}
+#btn_sc:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+/* ................................................ */
+#wrapper1 {
+  
+  width: 100%;
+  max-width: 964px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#carousel1 {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel1::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev1,
+#next1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev1 {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next1{
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content1 {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+
+
+
+.top{
+  padding-top: 10px;
+  /* border: 1px red solid; */
+  width: 150px;
+  padding-left: 5px;
+}
+
+.top>h6{
+color: gray;
+font-weight: 500;
+
+}
+
+.explore{
+  margin-top: 10px;
+  display: flex;
+margin-bottom: 15px;
+justify-content: space-evenly;
+}
+
+
+.explore>img{
+width: 30px;
+height: 30px;
+}
+
