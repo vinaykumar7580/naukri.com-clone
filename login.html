@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    
+    nav{
+    
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        height: 65px;
+        line-height: 65px;
+    }
+    
+    nav .wrapper{
+    position: relative;
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items:center ;
+    justify-content:space-between ;
+    
+    
+    }
+    .wrapper .logo a{
+    color: rgb(29, 30, 31);
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+    
+    
+    }
+    
+    .wrapper .nav-links{
+        display: inline-flex;
+    }
+    
+    .nav-links li{
+        list-style: none;
+    }
+
+    .nav-links li a{
+    color: rgb(7, 11, 20);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    }
+    
+    .nav-links li a:hover{
+       
+        background-color:rgb(239, 139, 24);
+    }
+    
+    
+    .nav-links .drop-meanu{
+    background-color:white ;
+    width: 180px;
+    top:65px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    }
+    
+    .nav-links li:hover .drop-meanu,
+    .nav-links li:hover .mega-box{
+        top: 65px; 
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease ;
+    }
+    
+    
+    .drop-meanu li a{
+        width: 100%;
+        display: block;
+        padding: 0 0 0 15px;
+        font-weight: 400px;
+        border-radius:0px ;
+        color: black;
+    
+    
+    }
+    
+    .mega-box{
+    position:  absolute;
+    top:80px;
+    width: 100%;
+   /* 100% and margin auto */
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    
+    }
+
+    
+    .mega-box .content{
+        background: white;
+        /* padding: 25px 20px ; */
+       display: flex;
+       width: 80%;
+       /* border: 1px red solid; */
+       display: flex;
+       justify-content: space-evenly;
+       margin-left: 30%;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       /* padding-left: 500px; */
+    
+    }
+    
+    .content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+    text-align:center;
+    
+    }
+    .content .row header{
+    color: black;
+    font-size:20px ;
+    font-weight: 500;
+    /* text-align: center;
+    padding-right: 500px; */
+    
+    }
+    
+    .content .row header:hover{
+
+      border-bottom:1px orangered solid ;
+    }
+
+
+
+    .content .row .mega-links{
+    margin-left: -40px;
+    border-left:1px solid rgba(255, 255, 255, 0.09) ;
+    
+    
+    }
+    
+    .row .mega-links li a{
+    padding: 0 20px;
+    color: rgb(139, 145, 159);
+    /* font-size: 15px; */
+    display: block;
+    
+    
+    }
+    
+    
+    #employer{
+    background-color: white;
+    border: none;
+    color: rgb(135, 139, 148);
+    font-size: large;
+    
+    
+    }
+    #logo2{
+       width: 15px;
+       height: 15px;
+      margin-left: 0%;
+      margin-right: 0%;
+
+    }
+    .content .row header>h6{
+        display: inline;
+        color: rgb(10, 9, 9);
+    }
+
+     
+    #login{
+        background:white;
+        color: rgb(58, 142, 215);
+        border: 1px rgb(65, 148, 220) solid ; 
+        font-size: 18px;
+        font-weight: 500px;
+        height: 30px;
+        width: 75px;
+        border-radius: 40px;
+      
+    }
+
+    #login>a:hover{
+        background: rgb(61, 145, 220);
+        color: white;
+        border: 1px rgb(56, 134, 203) solid ; 
+        border-radius: 40px;
+        height: 30px;
+    }
+
+    #register{
+        background:hsl(11,100%,67%);
+        color: hsl(0,0%,100%);
+        border: 1px hsl(11,100%,67%) solid ; 
+        font-size: 18px;
+        font-weight: 500px;
+        height: 30px;
+        width: 98px;
+        border-radius: 40px;
+        margin-right:10px ;
+    }
+
+    #register>a:hover{
+         
+        background: white;
+        color: rgb(253, 121, 91);
+        border: 1px rgb(248, 119, 90) solid ; 
+        border-radius: 40px;
+        height: 30px;
+
+
+    }
+
+    div>h1{
+       margin-top: 100px;
+       text-align: center;
+       font-family: 'Roboto-slab';
+       font-weight: 700;
+       font-size:36px;
+       color-scheme: black;
+    }
+
+    p{
+      color: gray;
+      font-weight: 100;
+      text-align: center;
+     } 
+
+    
+</style>
+<body>
+   
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#">  <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="logoimage"/></a></div>
+            <ul class="nav-links">
+            <li><a href="#">Jobs</a>
+            
+                <div class="mega-box" >
+                    <div class="content">
+    
+                        <div class="row">
+                            <header>Popular categories</header>
+                             <ul class="Mega-links">
+                                 <li><a href="#">IT jobs</a></li>
+                                 <li><a href="#">Sales jobs</a></li>
+                                 <li><a href="#">Marketing jobs</a></li>
+                                 <li><a href="#">Data Science jobs</a></li>
+                                 <li><a href="#">HR jobs</a></li>
+                                 <li><a href="#">Engineering jobs</a></li>
+     
+                             </ul>
+                          </div> 
+    
+    
+    
+    
+                        <div class="row">
+                            <header>Jobs in demand</header>
+                             <ul class="Mega-links">
+                                 <li><a href="#">Fresher jobs</a></li>
+                                 <li><a href="#">MNC jobs</a></li>
+                                 <li><a href="#">Remote jobs</a></li>
+                                 <li><a href="#">Work from home jobs </a></li>
+                                 <li><a href="#">Walk-in jobs</a></li>
+                             </ul>
+                          </div>
+    
+    
+
+
+
+                          <div class="row">
+                            <header>Explore more jobs</header>
+                             <ul class="Mega-links">
+                                 <li><a href="#">Jobs by category</a></li>
+                                 <li><a href="#">Jobs by skill</a></li>
+                                 <li><a href="#">Jobs by location</a></li>
+                                 <li><a href="#">Jobs by designation</a></li>
+                                 <li><a href="#">Create free job alert</a></li>
+     
+     
+                             </ul>
+                          </div>
+
+    
+                         <div class="row">
+                           <header>Jobs by location</header>
+                            <ul class="Mega-links">
+                                <li><a href="#">Jobs in Delhi</a></li>
+                                <li><a href="#">Jobs in Mumbai</a></li>
+                                <li><a href="#">Jobs in Bangalore</a></li>
+                                <li><a href="#">Jobs in Hyderabad</a></li>
+                                <li><a href="#">Jobs in Chennai </a></li>
+                                <li><a href="#">Jobs in Pune </a></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+            
+            <!-- hii -->
+            </li>
+            <li><a href="#">Compaines</a>
+            
+            
+            
+                <div class="mega-box" >
+                    <div class="content">
+    
+
+
+                        <div class="row">
+                            <header>Explore categories</header>
+                             <ul class="Mega-links">
+                                 <li><a href="#">Unicorn</a></li>
+                                 <li><a href="#">MNCs</a></li>
+                                 <li><a href="#">Startup</a></li>
+                                 <li><a href="#">Product based</a></li>
+                                 <li><a href="#">Internet</a></li>
+     
+     
+                             </ul>
+                          </div>
+
+
+                        
+
+
+
+
+
+
+
+                        <div class="row">
+                            <header>Explore collection</header>
+                             <ul class="Mega-links">
+                                 <li><a href="#">Top Compaines</a></li>
+                                 <li><a href="#">Fintech Compaines</a></li>
+                                 <li><a href="#">Edtech Compaines</a></li>
+                                 <li><a href="#">Feature Compaines</a></li>
+                                 <li><a href="#">Sponsored Compaines</a></li>
+     
+     
+                             </ul>
+                          </div>
+    
+    
+    
+    
+                    
+    
+    
+    
+    
+    
+    
+                         <div class="row">
+                           <header>Research Compaines
+                            <h6>by</h6><img src="https://static.naukimg.com/s/0/0/i/ambitionBoxLogo.png" id="logo2" alt="logo2"><h6>Ambitionbox</h6>
+                           </header>
+                            <ul class="Mega-links">
+                                <li><a href="#">Interview questions</a></li>
+                                <li><a href="#">Company salaries</a></li>
+                                <li><a href="#">About Compaines</a></li>
+                                <li><a href="#">Company reviews</a></li>
+                              
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+          </li>
+            <li>
+                <a href="#">Services</a>
+              
+              
+              
+              
+            
+                <div class="mega-box" >
+                    <div class="content">
+    
+
+
+                        <div class="row">
+                            <header>Resume Writing</header>
+                             <ul class="Mega-links">
+                                 <li><a href="#">Text resume</a></li>
+                                 <li><a href="#">Visual resume</a></li>
+                                 <li><a href="#">Resume critique</a></li>
+                               
+                                 <header>Find jobs</header>
+                                 <li><a href="#">Jobs4u</a></li>
+                                 <li><a href="#">Priority application</a></li>
+     
+     
+                             </ul>
+                          </div>
+
+
+                        
+
+
+
+
+
+
+
+                        <div class="row">
+                            <header>Get recruiter's attention</header>
+                             <ul class="Mega-links">
+                                 <li><a href="#">Resume display</a></li>
+                                 <li><a href="#">Recruiter connection</a></li>
+                                 <li><a href="#">Job search booster</a></li>
+                                 <header>Monthly subscription</header>
+                                 <li><a href="#">Basic & premium plans</a></li>
+                             
+     
+     
+                             </ul>
+                          </div>
+    
+    
+    
+    
+                    
+    
+    
+    
+    
+    
+    
+                         <div class="row">
+                           <header>Learn & upskill</header>
+                            <ul class="Mega-links">
+                                <li><a href="#">Data Science courses</a></li>
+                                <li><a href="#">Technology courses</a></li>
+                                <li><a href="#">Management courses</a></li>
+                                <li><a href="#">Finance courses</a></li>
+                                <li><a href="#">Design courses</a></li>
+                                <li><a href="#">Healthcare courses</a></li>
+                                <li><a href="#">Degree programs</a></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            
+        
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            </li>
+           <li>
+
+
+
+            <button id="login"><a href="">Login</a></button>
+            <button id="register"><a href="">Register</a></button>
+
+           </li>
+
+
+
+
+            <li><select id="employer">
+                <option>For employer</option>
+                <option>Buy online</option>
+                <option>Our hiring solutions</option>
+                <option>Employer Login</option>
+             
+                
+               </select>
+                
+                </li>
+    
+            </ul>
+        </div>
+        </nav>
+
+
+
+
+ 
+</script>
+</body>
+</html>

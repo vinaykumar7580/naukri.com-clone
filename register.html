@@ -51,7 +51,7 @@
     .middlepane{
         width: 50%;
      min-width: 800px;
-     height: available;
+     height: auto;
       min-height: 650px;
      float: left;
       /* border: 1px solid red; */
@@ -129,7 +129,52 @@
         border-radius: 30px;
 
     }
+    .rightpane>p{
+        padding-top: 100px;
+        margin-left: 15px;
+        font-weight:bold;
+    }
+    .rightpane>button>img{
+        height: 40px;
+        width:50px;
+    }
+    .rightpane>button{
+      width:80px;
+      height:50px;
+      background-color:white;
+      margin-left: 40px;
+      border:2px solid blue;
+      border-radius:30px;
+    }
+    .rightpane>button:hover{
 
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #nav>.login>a{
+        text-decoration: none;
+        font-weight:bold;
+    }
+    #foot{
+        margin-top :1000px;
+        
+    }
+    #foot>ul{
+        display:flex;
+        gap:30px;
+    margin-left: 400px;
+    color:blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    }
+    #copyright{
+        margin-left: 550px;
+        font-size:15px;
+        color: rgb(145, 143, 143);
+    }
+    #foot>ul>p>a{
+        text-decoration: none;
+        color:blue;
+    }
 </style>
 <body>
     <header id="nav">
@@ -189,19 +234,30 @@
     </div>
     
     </div>
-    <div class="rightpane"></div>
+    <div class="rightpane">
+        
+        <p>Continue with Google</p>
+        <button onclick="google()"><img src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif" alt=""></button>
+    </div>
 </div>
-  <!--<footer id="foot">
+  <div id="foot">
     <ul>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li>FAQs</li>
-        <li>Terms and Conditions</li>
-        <li>Report a Problem</li>
-        <li>Privacy Policy</li>
-        <span>All rights reserved © 2022 Info Edge India Ltd.</span>
+        <p> <a href="https://www.infoedge.in/">About Us</a></p>
+        <p><a href="https://www.naukri.com/mynaukri/mn_contactus.php">Contact Us</a></p>
+        <p><a href="https://www.naukri.com/faq/job-seeker">FAQs</a></p>
+        <p><a href="https://www.naukri.com/termsconditions">Terms and Conditions</a> </p>
+        <p><a href="https://w5.naukri.com/fdbck/main/feedback.php">Report a Problem</a></p>
+        <p><a href="https://www.naukri.com/privacypolicy">Privacy Policy</a></p>
+        <!-- <span>All rights reserved © 2022 Info Edge India Ltd.</span> -->
 
     </ul>
-  </footer>-->
+    <p id="copyright"> All rights reserved © 2022 Info Edge India Ltd.</p>
+</div>
 </body>
 </html>
+<script>
+
+    function google(){
+        window.location.href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp";
+    }
+</script>
