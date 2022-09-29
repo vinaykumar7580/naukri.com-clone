@@ -1,0 +1,110 @@
+#bk1{
+    width:400px;
+    height:150vh;
+    border:1px solid transparent;
+    
+}
+#bk2{
+    
+    width:600px;
+    height:150vh;
+    border:1px solid transparent;
+}
+#bk{
+    display: flex;
+    cursor: pointer;
+}
+#bk3{
+    width:400px;
+    height:700px;
+    border:1px solid transparent;
+    margin-left:50px;
+}
+#login{
+position:absolute;
+right:400px;
+top:20px;
+}
+
+.icons{
+height:15px;
+width:15px;
+margin-right:15px;
+}
+#div2{
+display:flex;
+width:300px;
+margin-top:15px;
+justify-content: space-between;
+}
+#div7{
+display:flex;
+margin-top:20px;
+}
+#div1{
+border:1px solid transparent;
+width:100%;
+height:210px;
+padding:20px 20px;
+box-shadow: 1px 2px 8px grey;
+position: relative;;
+}
+
+#div8{
+margin-top:20px;
+display:inline-flex;
+justify-content: space-between;
+width:350px;
+font-size: 15px;
+font-weight: 500;
+text-decoration:
+none solid rgb(9, 30, 66);
+color:rgba(0, 0, 0, 0.945);
+
+}
+p{
+color:
+#536777;
+color:
+rgb(83, 103, 119);
+line-height: normal;
+font-size: 12px;
+font-weight: 400;
+text-decoration:
+none solid rgb(83, 103, 119);
+font-family :
+Roboto, sans-serif;
+}
+
+#jobname{
+font-size:16px;
+font-weight: 600;
+line-height: 30px;
+text-decoration:
+none solid rgb(9, 30, 66);
+
+font-family : sans-serif;
+color:
+#091e42;
+color:
+rgb(9, 30, 66);
+}
+#company{
+font-size:14px;
+font-weight: 400;
+line-height: 16px;
+text-decoration:
+none solid rgb(9, 30, 66);
+color:
+#091e42;
+color:
+rgb(9, 30, 66);
+}
+.dop{
+display:flex;
+margin-top:15px;
+}
+#div7>p{
+    margin-left:15px;
+    margin-right: 10px;;
+}
