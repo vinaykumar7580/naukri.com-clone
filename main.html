@@ -20,8 +20,11 @@
         <h3>Search jobs</h3>
         <input type="text" placeholder="search jobs by - designation / companies / skills " id="search_job_vw">
         <button id="search_btn_vw">SEARCH</button>
-
+        
     </div>
+    <!-- <div class="gif">
+        <img src="https://flevix.com/wp-content/uploads/2019/07/Preloader-1-1.gif" alt="">
+       </div> -->
 
     <!-- conatainers starting from here -->
     <div id="main_div_vw">
@@ -55,7 +58,7 @@
                 <p>India</p>
                 <span class="star">&#9734;</span>
                 <span>3.0</span>
-                <button class="follow_btn">&#x2214; Follow</button>
+                <button class="follow_btn"><span>&#x2214;</span> Follow</button>
 
                
 
@@ -114,6 +117,11 @@
              </div>
         </div>
     </div>
+
+
+
+
+
      <div class="container4_vw">
         <div class="cont3_1">
 
@@ -127,15 +135,27 @@
 
     </div>
 
+    <!-- right containers -->
+
     <div class="right_container  animate__animated animate__zoomIn">
         
         <img src="./images/images.png" alt="">
         <h3 id="user_name"><span>&#9780;</span> Vaibhav Waghmare</h3>
         <div class="range  animate__animated animate__fadeIn animate__delay-1s"></div>
         <button id="info_updt_btn" >Update Profile</button>
-       
+
+     <div id="wishList_btn">
+        <div id="wish_count">
+            <h5>Total Jobs in your wishlist !!</h5><br>
+            <div id="wish_list_count">2</div>
+        </div>
+        <div id="wish_desc"></div>
+
+     </div>
+
     </div>
-    <!-- secon cont for QR -->
+
+    <!-- secon cont fr QR -->
     <div class="right_container2">
     <div class="right_cont2">
         <div class="r_cont2_1">
@@ -150,8 +170,19 @@
     </div>
     <p id="Qr_text">Scan to download the app !</p>
 </div>
-   
+
+
+
+   <!-- //appending cards div -->
+   <div class="job_cards_vw animate__animated animate__fadeInUp">
+
+
+   </div>
+  
     
 </body>
 </html>
 <script src="main.js"></script>
+
+
+
