@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+}
+
+.img_container{
+    position: fixed;
+    width: 43%;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+}
+.img_container>img{
+    width: 100%;
+}
+.wishList_item{
+    /* border-top: 8px solid rgb(176, 233, 255); */
+    width: 53%; position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    top: 1%;
+    left: 43%;
+    margin-top: 7%;
+    /* overflow: auto; */
+    scroll-behavior: smooth;
+}
+#line{
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    top: 12%;
+    left: 43%;
+    width: 54%;
+    height: 10px;
+    background-color: rgb(255, 234, 254);
+}

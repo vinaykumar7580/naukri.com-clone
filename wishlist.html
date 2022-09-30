@@ -1,24 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+   
+    <div class="img_container">
+        <img src="https://img.freepik.com/premium-vector/vector-design-online-job-application_362714-690.jpg?w=2000" alt="">
+    </div>
+    <div class="wishList_item   animate__animated animate__fadeInRight ">
 
-const url = "https://fathomless-mesa-30320.herokuapp.com/data_project?q=";
+    </div>
+    <div id="line"></div>
+</body>
+</html>
+<script>
+    function getData(){
+        let data = JSON.parse(localStorage.getItem("wishList"))||[];
+        append(data);
+    }
 
-async function getdata(query){
-let res = await fetch(`${url}${query}`);
-let data = await res.json();
-console.log(data);
-append(data)
-}
-
-document.getElementById("search_btn_vw").addEventListener("click",sendQuery);
-function sendQuery(){
-    let query = document.getElementById("search_job_vw").value;
-    getdata(query)
-}
-let main_div = document.getElementById("main_div_vw")
-function append(data){
-    let divv = document.querySelector(".job_cards_vw");
+    function append(data){
+    let divv = document.querySelector(".wishList_item");
     divv.innerHTML=null;
-    main_div.style.display="none";
-    divv.style.display="inherit";
+  
 data.forEach((ele,i)=> {
     
     let cont1 = document.createElement("div")
@@ -64,14 +75,6 @@ data.forEach((ele,i)=> {
     let cont6 = document.createElement("div");
     cont6.className="cont_2_1_1";
 
-    let btn1 = document.createElement("button");
-    btn1.innerText="whishlist";
-    btn1.addEventListener("click",()=>{
-
-         Add_wishList(ele)
-
-    })
-    btn1.setAttribute("id", "whishList");
     let btn2 = document.createElement("button");
     btn2.setAttribute("id","p22");
     btn2.innerText="Apply for this JOB !! ";
@@ -79,7 +82,7 @@ data.forEach((ele,i)=> {
     cont4.append(imgg)
     cont5.append(p2,p1)
     cont3.append(cont4,cont5)
-    cont6.append(btn1,btn2)
+    cont6.append(btn2)
     cont2.append(cont3,span1,span2,p3,p4,cont6)
     cont1.append(h3,cont2)
     divv.append(cont1)
@@ -87,25 +90,6 @@ data.forEach((ele,i)=> {
 
 });
 }
-let count_btn =1;
+getData();
 
-document.querySelector(".follow_btn").addEventListener("click", ()=>{
-let text = document.querySelector(".follow_btn")
-    if(count_btn==1){
-       text.innerText ="following..";
-       count_btn =2;
-    }
-    else{
-        text.innerText="follow";
-        count_btn=1;
-    }
-})
-let wishList_count=0;
-let wish_list_item=JSON.parse(localStorage.getItem("wishList"))||[];
-
-function  Add_wishList(ele){
-    alert("Adding to Wish List ...")
-wish_list_item.push(ele)
-localStorage.setItem("wishList",JSON.stringify(wish_list_item))
-console.log(ele);
-}
+</script>
