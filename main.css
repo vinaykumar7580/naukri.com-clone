@@ -157,15 +157,15 @@ color: rgb(78, 78, 78);
     margin-top: 10px; 
     border-radius: 5px;
     transition: 0.2s ease-in-out; 
-    background-color: rgb(255, 235, 120);
+    background-color: gold;
     
     transition: 0.2s ease-in-out;
     border: none;
-    color: rgb(65, 65, 65);
+    color: rgb(0, 0, 0);
 }
 .cont1_4_vw>a>button:hover{
-    background-color: gold;
-    border: 1px solid rgb(205, 151, 15);
+    background-color: rgb(252, 255, 93);
+    border: 1px solid rgb(1, 1, 1);
 
 }
 .cont1_4_vw>img{
@@ -261,20 +261,27 @@ margin: 2px;
     align-items: center;
     position: relative;
     top: 32%;left: 6%;
-    border: 2px solid rgb(0, 55, 255);
+    /* border: 2px solid rgb(0, 55, 255); */
     width: 87%;
     height: 30%;
     border-radius: 10px;
     opacity: 0.8;
-    /* background-color: rgb(81, 177, 255); */
+    background-color: rgb(195, 227, 255);
 }
 #wish_count,#wish_desc{
-    border: 1px solid red;
+    border: 1px solid rgb(185, 185, 185);
     height: 80%;
     width:45%;
+    cursor: pointer;
+    background-color: white;
     text-align: center;
     border-radius: 10px;
     color: black;
+    transition: 0.3s ease-in-out;
+}
+#wish_count:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
 }
 #wish_count>h5{
     margin-top: 12px;
@@ -321,8 +328,9 @@ font-family: cursive;
 
 }
 #Qr_img{
-    width: 99%;
-    height: 99%;
+    width: 85%;
+    height: 89%;
+    margin: 18px 3px 3px 15px;
 }
 #play_store_logo{
     margin: 20px 15px 0 15px;
@@ -371,6 +379,7 @@ font-family: cursive;
 .job_card_vw{
     margin-bottom: 20px;
     height: 230px;
+    font-family: sans-serifddddddd;
 
 }
 .job_cont1{
@@ -421,12 +430,15 @@ margin-top: 15px;
 }
 #jobPost{
     margin: 10px 0 0 17px;
-    background-color: rgb(255, 234, 254);
+    background-color: rgb(199, 245, 255);
     width: 240px;
     height: 25px;
     padding-left: 10px;
     opacity: 0.8;
 
+}
+#click_test{
+    font-weight: bolder;
 }
 
 #whishList{

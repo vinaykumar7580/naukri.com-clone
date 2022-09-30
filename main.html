@@ -147,7 +147,8 @@
      <div id="wishList_btn">
         <div id="wish_count">
             <h5>Total Jobs in your wishlist !!</h5><br>
-            <div id="wish_list_count">2</div>
+            <div id="wish_list_count">0</div>
+            <h5 id="click_test"> Click here to see !</h5>
         </div>
         <div id="wish_desc"></div>
 
@@ -183,6 +184,12 @@
 </body>
 </html>
 <script src="main.js"></script>
+<script>
+    document.querySelector("#wish_count").addEventListener("click",()=>{
+        
+        window.location.href="wishlist.html"
+    })
+</script>
 
 
 
