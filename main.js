@@ -69,6 +69,7 @@ data.forEach((ele,i)=> {
     btn1.addEventListener("click",()=>{
 
          Add_wishList(ele)
+         wishlist_count()
 
     })
     btn1.setAttribute("id", "whishList");
@@ -100,12 +101,22 @@ let text = document.querySelector(".follow_btn")
         count_btn=1;
     }
 })
-let wishList_count=0;
+let wishList_count=JSON.parse(localStorage.getItem("wish_list_count"))||0;
 let wish_list_item=JSON.parse(localStorage.getItem("wishList"))||[];
+let display = document.getElementById("wish_list_count");
+display.innerText=wishList_count;
 
 function  Add_wishList(ele){
     alert("Adding to Wish List ...")
 wish_list_item.push(ele)
 localStorage.setItem("wishList",JSON.stringify(wish_list_item))
+
+
 console.log(ele);
+}
+
+function wishlist_count(){
+    wishList_count++
+    display.innerText=wishList_count;
+    localStorage.setItem("wish_list_count",JSON.stringify(wishList_count ))
 }
