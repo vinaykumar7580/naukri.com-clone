@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login on Naukri.com : Apply to Millions of Jobs Online</title>
+    <link rel="shortcut icon" href="https://static.naukri.com/s/4/100/i/naukriLogoIcon200.png">
 </head>
 <body>
     <!DOCTYPE html>
@@ -251,12 +252,149 @@
        color-scheme: black;
     }
 
-    p{
-      color: gray;
-      font-weight: 100;
-      text-align: center;
-     } 
+   
+     .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
 
+/* Control the left side */
+.left {
+  left: 0;
+  /* background-color: #111; */
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  /* background-color: red; */
+}
+
+/* If you want the content centered horizontally and vertically */
+#centered {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  text-align: left;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+  height: 60%;
+}
+#centered_right {
+  /* position: absolute; */
+  top: 20%;
+  left: 40%;
+  /* text-align: left; */
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 60%;
+  height: 70%;
+  margin-right:40px;
+  margin-top:80px;
+}
+/* Style the image inside the centered container, if needed */
+    #main{
+        text-align:left;
+        margin-left:50px;
+        margin-top: 100px;
+        height:auto;
+ 
+    }
+    #main>p{
+      color:black;
+      /* font-weight: 100; */
+      margin-top: 10px;
+      text-align: left;
+      font-size: large;
+      font-size:16px;
+     } 
+    #main>button{
+        margin-top:70px;
+        height:40px;
+        width:200px;
+        color:#4a90e2;
+        font-weight: bold;
+        background-color:white;
+        border:1px solid #4a90e2;;
+    }
+    #centered>img{
+        height:80px;
+        width:130px;
+        margin-left:330px;
+    }
+    #head{
+        margin-left:50px;
+        padding-top:20px;
+    }
+    #e{
+        padding-top: 30px;
+        margin-left: 50px;
+        font-size: 15px;
+    }
+    #email1{
+        /* margin-top: 20px; */
+        height:40px;
+        width:300px;
+        margin-left: 50px;
+    }
+    #p{
+        padding-top: 30px;
+        margin-left: 50px;
+        font-size: 15px;  
+    }
+    #pass1{
+        height:40px;
+        width:300px;
+        margin-left: 50px;
+    }
+    #f{
+        margin-left: 235px;
+        font-size: 15px;  
+        color:blue;
+    }
+    #submit{
+        margin-top:30px;
+        height:40px;
+        width:300px;
+        margin-left: 50px;
+        color:white;
+         background-color: #4a90e2;
+         border:none;
+         font-size:18px;
+    }
+    #u{
+        margin-top:30px;
+        margin-left: 135px;
+        
+
+    }
+    #s{
+        margin-top:30px;
+        margin-left: 50px;
+        height:40px;
+        width:300px;
+        border-radius: 30px;
+        background-color:white;
+        /* border:2px solid #4a90e2; */
+        border: none;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #s>img{
+        height:30px;
+        width:100px;
+        
+    }
+    #u>a{
+        text-decoration: none;
+        color:#4a90e2;
+    }
     
 </style>
 <body>
@@ -514,10 +652,43 @@
         </div>
         </nav>
 
+        <div class="split left">
+            <div id="centered">
+                <div id="main">
+                    <h3>New to Naukri?</h3>
+                   <p> &#10003; One click apply using naukri profile.</p>
+                   <p>&#10003; Get relevant job recommendations.</p>
+                   <p>&#10003; Showcase profile to top companies and consultants.</p>
+                   <p>&#10003; Know application status on applied jobs.</p>
+                   <button>Register for Free</button>
+                   
+                </div>
+                <img src="https://static.naukimg.com/s/5/105/i/register.png" alt="">
+            </div>
+          </div>
+          
+          <div class="split right">
+            <div id="centered_right">
+              <h2 id="head">Login</h2>
+              <p id="e">Email ID / Username</p>
+              <input type="email" id="email1" placeholder="Enter Email ID / Username">
+              <p id="p">Password</p>
+              <input type="password" id="pass1" placeholder="Enter Password">
+             <p id="f">Forgot Password?</p>
+             <button id="submit">Login</button>
+             <p id="u"><a href="https://www.naukri.com/nlogin/login">Use OTP to Login</a></p>
 
-
-
+             <button id="s" onclick="google()"><img src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif" alt=""></button>
+            </div>
+          </div>
  
-</script>
+<!-- </script> -->
 </body>
 </html>
+<script>
+
+function google(){
+window.location.href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp";
+}
+    
+</script>
