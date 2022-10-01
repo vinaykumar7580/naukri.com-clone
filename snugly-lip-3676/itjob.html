@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="itjob.css">
+    <script src="https://kit.fontawesome.com/cdaeebd343.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="left">
+        <div id="all_filter">
+            <h4><i class="fa-solid fa-bars"></i>  All Filters</h4>
+            <h4 id="blue">Applied(3)</h4>
+        </div>
+        <div id="department">
+            <div><h4>Department</h4></div>
+            <div>
+                <input type="checkbox" checked>
+                <p>Engineering-Hardware & ...(1912)</p>
+            </div>
+            <div>
+                <input type="checkbox" checked>
+                <p>Engineering-Software & ...(22440)</p>
+            </div>
+            <div>
+                <input type="checkbox" checked>
+                <p>IT & Information Security(4414)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Sales & Business Develop...(12882)</p>
+            </div>
+            <h4 id="blue">+33 More...</h4>
+        </div>
+        <div id="work">
+            <h4>Work from Home</h4>
+            <div>
+               <input type="checkbox">
+               <p>WFH during Covid(1487)</p>
+            </div>
+        </div>
+        <div id="experience">
+            <h4>Experience</h4>
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              <div id="p_tag">
+                <p>0 Yrs</p>
+                <p><span id="demo"></span>Yrs</p>
+              </div>
+               
+            </div>
+        </div>
+        <div id="location">
+            <h4>Location</h4>
+            <div>
+                <input type="checkbox">
+                <p>Remote (10)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Bangalore/Bengaluru (205)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Delhi / NCR (128)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Pune (118)</p>
+            </div>
+            <h4 id="blue">+22 More</h4>
+        </div>
+        <div id="salary">
+            <h4>Salary</h4>
+            <div>
+                <input type="checkbox">
+                <p>0-3 Lakhs (9)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>3-6 Lakhs (11)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>6-10 Lakhs (26)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>10-15 Lakhs (109)</p>
+            </div>
+            <h4 id="blue">+5 More</h4>
+        </div>
+        <div id="company">
+            <h4>Company type</h4>
+            <div>
+                <input type="checkbox">
+                <p>Foreign MNC (7678)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Corporate (2433)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Indian MNC (2018)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Startup (360)</p>
+            </div>
+            <h4 id="blue">+3 More</h4>
+        </div>
+        <div id="role_cata">
+            <h4>Role Category</h4>
+            <div>
+                <input type="checkbox">
+                <p>Software Development (18667)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Quality Assurance and Te... (2069)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>IT Support (1494)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>IT Network (1474)</p>
+            </div>
+            <h4 id="blue">+6 More</h4>
+        </div>
+        <div id="education">
+            <h4>Education</h4>
+            <div>
+                <input type="checkbox">
+                <p>Any Postgraduate (14366)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>MCA(3183)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Any Graduate (16498)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>B.Tech/B.E. (12285)</p>
+            </div>
+            <h4 id="blue">+20 More</h4>
+        </div>
+        <div id="Posted">
+            <h4>Posted by</h4>
+            <div>
+                <input type="checkbox">
+                <p>Company Jobs (20469)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Consultant Jobs (8558)</p>
+            </div>
+        </div>
+        <div id="industries">
+            <h4>Industries</h4>
+            <div>
+                <input type="checkbox">
+                <p>IT Services & Consulting (20122)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Software Product (1456)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Recruitment / Staffing (672)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Banking (594)</p>
+            </div>
+            <h4 id="blue">+21 More</h4>
+        </div>
+        <div id="top_companies">
+            <h4>Top Companies</h4>
+            <div>
+                <input type="checkbox">
+                <p>Accenture (1483)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>IBM India (653)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Infosys Technologies (422)</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Cognizant Technology (378)</p>
+            </div>
+            <h4 id="blue">+25 More</h4>
+        </div>
+        <div id="freshness">
+            <h4>Freshness</h4>
+            <select name="" id="select">
+                <option value=""><p>Select</p></option>
+            </select>
+
+        </div>
+    </div>
+    <div id="middle">
+        <div id="top_itjobs">
+            <div><p>1-20 of 28270 It Jobs</p></div>
+            <div>
+                <div id="two">
+                    <div><p id="blue">Send me jobs like these |</p></div>
+                    <div id="three">
+                        <p>Sort by :</p>
+                        <select name="" id="">
+                            <option value="">Relevance</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="imageset">
+                <div>
+                    <h3>App Ops - Production support of distributed application</h3>
+                    <p>TATA CONSULTANCY SERVICES(TCS)  3.9 <i id="yellow" class="fa-regular fa-star"></i> (47736 Reviews)</p></div>
+                    <div id="small_box">
+                        <div><i class="fa-solid fa-bag-shopping"></i> 4-9 Yrs</div>
+                        <div><i class="fa-solid fa-indian-rupee-sign"></i> Not disclosed</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Kolkata, Hyderabad/sec...</div>
+                    </div>
+
+                    <div><i class="fa-regular fa-file"></i> Hands on working experience in AWS and understanding of various AWS tools Knowledge of ...</div>
+                    <div id="flex">
+                        <div>java</div>
+                        <div>Weblogic</div>
+                        <div>jenkins</div>
+                        <div>aws</div>
+                        <div>Postgres</div>
+                        <div>C</div>
+                        <div>SPLUNK</div>
+                        <div>Apache</div>
+                    </div>
+                    <div id="day_ago">
+                        <div id="green"><i class="fa-solid fa-clock"></i> 1 DAY AGO</div>
+                        <div><i class="fa-regular fa-star"></i> Save</div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <img src="https://www.naukri.com/hotjobs/images/v3/tcsl_nov13.gif" alt="">
+                </div>
+              
+            </div>
+          
+           
+        </div>
+        <div id="box1">
+            <div id="imageset1">
+                <div>
+                    <h3>DevOps Engineer - Python/Bash Scripting</h3>
+                    <p>Patch Infotech Private Limited - 4.8
+                         <i id="yellow1" class="fa-regular fa-star"></i> (5 Reviews)</p></div>
+                    <div id="small_box1">
+                        <div><i class="fa-solid fa-bag-shopping"></i> 3-8 Yrs</div>
+                        <div><i class="fa-solid fa-indian-rupee-sign"></i> Not disclosed</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Kolkata, Hyderabad/sec...</div>
+                    </div>
+
+                    <div><i class="fa-regular fa-file"></i> - Do you love to plan the team structure, activities and involvement in project managem...</div>
+                    <div id="flex1">
+                        <div>DevOps</div>
+                        <div>Bash Scripting</div>
+                        <div>Python</div>
+                        <div>Docker</div>
+                        <div>CI/CD</div>
+                        <div>AWS</div>
+                        <div>IT Infrastructure</div>
+                    </div>
+                    <div id="day_ago1">
+                        <div id="green"><i class="fa-solid fa-clock"></i> 1 DAY AGO</div>
+                        <div><i class="fa-regular fa-star"></i> Save</div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.H4onsU2ikHi0jS2ToK1bHgHaGw&pid=Api&rs=1&c=1&qlt=95&w=104&h=94" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="box2">
+            <div id="imageset2">
+                <div>
+                    <h3>DevOps Engineer - Python/Bash Scripting</h3>
+                    <p>Patch Infotech Private Limited - 4.8
+                         <i id="yellow2" class="fa-regular fa-star"></i> (5 Reviews)</p></div>
+                    <div id="small_box2">
+                        <div><i class="fa-solid fa-bag-shopping"></i> 3-8 Yrs</div>
+                        <div><i class="fa-solid fa-indian-rupee-sign"></i> Not disclosed</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Kolkata, Hyderabad/sec...</div>
+                    </div>
+
+                    <div><i class="fa-regular fa-file"></i> - Do you love to plan the team structure, activities and involvement in project managem...</div>
+                    <div id="flex2">
+                        <div>DevOps</div>
+                        <div>Bash Scripting</div>
+                        <div>Python</div>
+                        <div>Docker</div>
+                        <div>CI/CD</div>
+                        <div>AWS</div>
+                        <div>IT Infrastructure</div>
+                    </div>
+                    <div id="day_ago2">
+                        <div id="green"><i class="fa-solid fa-clock"></i> 1 DAY AGO</div>
+                        <div><i class="fa-regular fa-star"></i> Save</div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.H4onsU2ikHi0jS2ToK1bHgHaGw&pid=Api&rs=1&c=1&qlt=95&w=104&h=94" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="box3">
+            <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/naukri-srp-registration-wdgt/v0/assests/register.png" alt="">
+            <h5>Unlock personalised job recommendations from top companies directly in your inbox</h5>
+            <button id="btn">Register for free</button>
+        </div>
+        <div id="box4">
+            <div id="imageset4">
+                <div>
+                    <h3>Senior Test Engineer - Java/Selenium</h3>
+                    <p>Patch Infotech Private Limited - 4.8
+                         <i id="yellow4" class="fa-regular fa-star"></i> (5 Reviews)</p></div>
+                    <div id="small_box4">
+                        <div><i class="fa-solid fa-bag-shopping"></i> 2-7 Yrs</div>
+                        <div><i class="fa-solid fa-indian-rupee-sign"></i> Not disclosed</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Mumbai, Hyderabad/sec...</div>
+                    </div>
+
+                    <div><i class="fa-regular fa-file"></i> Minimum 2+ years of relevant experience in web automation Should have exposure to any o...</div>
+                    <div id="flex4">
+                        <div>Java</div>
+                        <div>Web automation</div>
+                        <div>Selenium</div>
+                        <div>MySql</div>
+                        <div>Python</div>
+                        <div>CICD</div>
+                        <div>Unix</div>
+                        <div>appium</div>
+                    </div>
+                    <div id="day_ago4">
+                        <div id="green"><i class="fa-solid fa-clock"></i> 1 DAY AGO</div>
+                        <div><i class="fa-regular fa-star"></i> Save</div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.H4onsU2ikHi0jS2ToK1bHgHaGw&pid=Api&rs=1&c=1&qlt=95&w=104&h=94" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="box5">
+            <div id="imageset5">
+                <div>
+                    <h3>Informatica Production Support</h3>
+                    <p>Tech Mahindra - 3.8
+                         <i id="yellow5" class="fa-regular fa-star"></i> (21151 Reviews)</p></div>
+                    <div id="small_box5">
+                        <div><i class="fa-solid fa-bag-shopping"></i> 5-10 Yrs</div>
+                        <div><i class="fa-solid fa-indian-rupee-sign"></i> 500000 - 1400000 PA</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Kochi/Cochin, Hyderabad/sec...</div>
+                    </div>
+
+                    <div><i class="fa-regular fa-file"></i> Job DescriptionThis is basically for a BI Developer/support role and the person should ...</div>
+
+                    <div id="flex5">
+                        <div>L3</div>
+                        <div>Informatica Powercenter</div>
+                        <div>Production Support</div>
+                        <div>IT Skills</div>
+                        <div>Oracle</div>
+                        <div>ETL</div>
+                    </div>
+                    <div id="day_ago5">
+                        <div id="green"><i class="fa-solid fa-clock"></i> 1 DAY AGO</div>
+                        <div><i class="fa-regular fa-star"></i> Save</div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <img src="https://www.naukri.com/hotjobs/images/v3/techmahindranov17.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="box6">
+            <div id="imageset6">
+                <div>
+                    <h3>Cognizant Hiring Java Developers</h3>
+                    <p>Cognizant - 3.9
+                         <i id="yellow6" class="fa-regular fa-star"></i> (28700 Reviews)</p></div>
+                    <div id="small_box6">
+                        <div><i class="fa-solid fa-bag-shopping"></i> 3-6 Yrs</div>
+                        <div><i class="fa-solid fa-indian-rupee-sign"></i> Not disclosed</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Noida, Kolkata,Mumbai...</div>
+                    </div>
+
+                    <div><i class="fa-regular fa-file"></i> Required Skills: Java+Microservices or Java+Kafka or Java+Angular / react+springbootExp...</div>
+
+                    <div id="flex6">
+                        <div>Java</div>
+                        <div>Java+Kafka</div>
+                        <div>Angularjs</div>
+                        <div>IT Skills</div>
+                        <div>react js</div>
+                        <div>kafka</div>
+                        <div>Spring Boot</div>
+                        <div>Microservices</div>
+                    </div>
+                    <div id="day_ago6">
+                        <div id="green"><i class="fa-solid fa-clock"></i> 1 DAY AGO</div>
+                        <div><i class="fa-regular fa-star"></i> Save</div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <img src="https://www.naukri.com/hotjobs/images/v3/cognizant_apr22.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="box7">
+            <div id="filter_jobs">
+                <p id="rupee"><i class="fa-solid fa-indian-rupee-sign"></i></p>
+                <p>Filter Jobs by Salary</p>
+            </div>
+            <div id="filter_by">
+                <div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign"></i>  0-3 Lakhs</h4>
+                    <p>3540 Jobs</p>
+                </div>
+                <div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign"></i>  3-6 Lakhs</h4>
+                    <p>9314 Jobs</p>
+                </div>
+                <div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign"></i>  6-10 Lakhs</h4>
+                    <p>16268 Jobs</p>
+                </div>
+                <div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign"></i>  10-15 Lakhs</h4>
+                    <p>15116 Jobs</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="box8">
+            <div id="imageset8">
+                <div>
+                    <h3>Senior AWS DevOps Engineer</h3>
+                    <p>Tech Mahindra - 3.8
+                         <i id="yellow8" class="fa-regular fa-star"></i> (21151 Reviews)</p></div>
+                    <div id="small_box8">
+                        <div><i class="fa-solid fa-bag-shopping"></i> 5-10 Yrs</div>
+                        <div><i class="fa-solid fa-indian-rupee-sign"></i> 500000 - 1400000 PA</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Kochi/Cochin, Hyderabad/sec...</div>
+                    </div>
+
+                    <div><i class="fa-regular fa-file"></i> Job DescriptionThis is basically for a BI Developer/support role and the person should ...</div>
+
+                    <div id="flex8">
+                        <div>L3</div>
+                        <div>Informatica Powercenter</div>
+                        <div>Production Support</div>
+                        <div>IT Skills</div>
+                        <div>Oracle</div>
+                        <div>ETL</div>
+                    </div>
+                    <div id="day_ago8">
+                        <div id="green"><i class="fa-solid fa-clock"></i> 1 DAY AGO</div>
+                        <div><i class="fa-regular fa-star"></i> Save</div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <img src="https://www.naukri.com/hotjobs/images/v3/techmahindranov17.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="box9">
+            <div id="imageset9">
+                <div>
+                    <h3>Functional Tester</h3>
+                    <p>TATA CONSULTANCY SERVICES (TCS) 3.9
+                         <i id="yellow9" class="fa-regular fa-star"></i> (47151 Reviews)</p></div>
+                    <div id="small_box9">
+                        <div><i class="fa-solid fa-bag-shopping"></i> 2-7 Yrs</div>
+                        <div><i class="fa-solid fa-indian-rupee-sign"></i> 200000 - 700000 PA</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Kolkata, Hyderabad/sec...</div>
+                    </div>
+
+                    <div><i class="fa-regular fa-file"></i> Required Skill Set: Test management tool, TDD / BDD, automation tools, frameworks, CI /...</div>
+
+                    <div id="flex9">
+                        <div>functional testing</div>
+                        <div>TDD</div>
+                        <div>CI/CD</div>
+                        <div>CI</div>
+                        <div>Test Management</div>
+                        <div>Scrum</div>
+                    </div>
+                    <div id="day_ago9">
+                        <div id="green"><i class="fa-solid fa-clock"></i> JUST NOW</div>
+                        <div><i class="fa-regular fa-star"></i> Save</div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <img id="tata" src="https://img.naukimg.com/logo_images/groups/v1/223346.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="box10">
+            <h4>Get 3X more profile views from java recruiters</h4>
+            <p>Increase your chances of callback with Naukri FastForward</p>
+            <h4 id="yes">Yes, I am interested</h4>
+            <div>It's a paid service</div>
+        </div>
+        <div id="box11">
+            <p>Apply to 40720 Jobs In India on Naukri.com</p>
+            <div id="trending">
+                <p id="trend">Trending</p>
+                <p>Localities</p>
+                <p>Nearby Locations</p>
+            </div>
+            <div id="order">
+                <div>
+                    <ul>
+                        <li>Delhi Jobs in India</li>
+                        <li>Mumbai Jobs In India</li>
+                        <li>Chennai Jobs In India</li>
+                        <li>Jaipur Jobs In India</li>
+                        <li>Ahmedabad Jobs In India</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Bangalore Jobs in India</li>
+                        <li>Hyderabad Jobs In India</li>
+                        <li>Chennai Jobs In India</li>
+                        <li>Pune Jobs In India</li>
+                        <li>Kolkata Jobs In India</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="box12">
+            <div>
+                <p>Get Personalised Job Recommendations</p>
+                <img src="https://static.naukimg.com/s/7/109/assets/images/register.e0bc10df.png" alt="">
+            </div>
+            <div>Registering gives you the benefit to browse & apply variety of jobs based on your preferences</div>
+            <div><p id="register">Register Now</p></div>
+
+        </div>
+        <div id="box13">
+            <p id="see">See 96 jobs in Featured Companies</p>
+            <div id="grid">
+                <div><img src="https://img.naukimg.com/fc_images/v2/93084.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/29679.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/3122282.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/45244.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/834.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/12386.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/64499.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/144993.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/13512.gif" alt=""></div>
+                <div><img src="https://img.naukimg.com/fc_images/v2/4498568.gif" alt=""></div>
+            </div>
+
+        </div>
+        <div id="box14">
+            <p id="know">Know More</p>
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
+
+<script src="itjob.js"></script>
