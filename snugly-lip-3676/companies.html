@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./companies.css">
+</head>
+<body>
+    <nav id="pav">
+
+    </nav>
+    <div id="bk">
+        <div id="bk1">
+          <div id="sor">
+           <h3>Filters</h3>
+           <select name="/" id="getsort" onchange="sortit(event)">
+            <option value="low">LOW TO HIGH</option>
+            <option value="high">HIGH TO LOW</option>
+          </select>
+          </div>
+         <div id="fil">
+           <img width="22px" id="filimg">
+           <h2>All Filters</h2>
+         </div>
+         <div class="loc">
+           <h3>By Location :</h3><br>
+           
+           <input type="checkbox" name="nagpur" id="nagpur"  />
+          <label for="nagpur" > Nagpur</label><br />
+          <input type="checkbox" name="Amravati" id="Amravati" />
+          <label for="Amravati"> Amravati</label><br />
+          <input type="checkbox" name="gurugaon" id="gurugaon" />
+          <label for="gurugaon"> Gurugaon</label><br />
+          <input type="checkbox" name="noida" id="noida" />
+          <label for="gurugaon"> Noida</label><br />
+           <button onclick="check(event)" id="sub">Submit</button>
+         </div>
+         
+         <div class="loc">
+          <h3>By Company :</h3><br>
+           
+          <input type="checkbox" name="tcs" id="tcs"  />
+         <label for="tcs" > Tata Consulty Services</label><br />
+         <input type="checkbox" name="MDS" id="MDS" />
+         <label for="MDS"> MDS Facilities</label><br />
+         <input type="checkbox" name="coal" id="coal" />
+         <label for="coal"> COAL India</label><br />
+         <input type="checkbox" name="victor" id="victor" />
+         <label for="victor"> Victorious Infotech Pvt. Ltd</label><br />
+          <button onclick="gocomp(event)" id="sub">Submit</button>
+        </div>
+    </div>
+    <div id="bk2">
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    {
+    let jobs=document.querySelector(".jobs");
+  jobs.style.display="none";
+  let company=document.querySelector(".company");
+  company.style.display="none";
+  let service=document.querySelector(".service");
+  service.style.display="none";
+}
+
+let job = document.getElementById("job");
+job.addEventListener("mousemove",find)
+function find()
+{
+    let company=document.querySelector(".company");
+  company.style.display="none";
+  let jobs=document.querySelector(".jobs");
+  jobs.style.display="flex";
+  let service=document.querySelector(".service");
+  service.style.display="none";
+}
+let jobs=document.querySelector(".jobs");
+jobs.addEventListener("mouseover",find)
+jobs.addEventListener("mouseout",ded);
+function ded()
+{
+    let company=document.querySelector(".company");
+  company.style.display="none";
+    let jobs=document.querySelector(".jobs");
+  jobs.style.display="none";
+  let service=document.querySelector(".service");
+  service.style.display="none";
+}
+
+// --------------------------------------------
+
+let comp = document.getElementById("comp");
+comp.addEventListener("mousemove",find1)
+
+let company=document.querySelector(".company");
+company.addEventListener("mouseover",find1)
+company.addEventListener("mouseout",ded1);
+
+function ded1()
+{
+    let jobs=document.querySelector(".jobs");
+  jobs.style.display="none";
+    let company=document.querySelector(".company");
+  company.style.display="none";
+  let service=document.querySelector(".service");
+  service.style.display="none";
+}
+function find1()
+{
+    let jobs=document.querySelector(".jobs");
+  jobs.style.display="none";
+  let service=document.querySelector(".service");
+  service.style.display="none";
+
+  let company=document.querySelector(".company");
+  company.style.display="flex";
+}
+
+// --------------------------------------------
+let Services = document.getElementById("Services");
+Services.addEventListener("mousemove",find2)
+
+let service=document.querySelector(".service");
+service.addEventListener("mouseover",find2)
+service.addEventListener("mouseout",ded2);
+
+function ded2()
+{
+    let jobs=document.querySelector(".jobs");
+  jobs.style.display="none";
+    let company=document.querySelector(".company");
+  company.style.display="none";
+  let service=document.querySelector(".service");
+  service.style.display="none";
+  
+}
+function find2()
+{
+    let jobs=document.querySelector(".jobs");
+  jobs.style.display="none";
+
+  let company=document.querySelector(".company");
+  company.style.display="none";
+  let service=document.querySelector(".service");
+  service.style.display="flex";
+}
+
+</script>
+<script src="./companies.js">
+
+</script>
