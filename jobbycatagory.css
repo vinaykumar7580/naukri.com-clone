@@ -119,3 +119,33 @@ h4,h5,h3{
  a{
     text-decoration-line: none;
  }
+
+ #foot{
+    display:flex;
+    justify-content: space-around;
+    padding:10px 110px;
+    background-color:black;
+    color:white;
+    margin-top:10px;
+    
+ }
+ a:hover{
+    color:rgb(235, 18, 47);
+    font-size:20px;
+ }
+ 
+ #foot>div>a{
+    display:grid;
+    gap:5px;
+    color:rgb(252, 247, 247);
+
+ }
+ #foot>div>img{
+    display:grid;
+    margin-top:10px;
+ }
+ 
+ #foot>div>h4{
+    margin-bottom:-3px;
+    font-size:17px;
+ }
