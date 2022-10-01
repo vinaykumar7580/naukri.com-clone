@@ -28,17 +28,16 @@ data.forEach((ele,i)=> {
     let h3 = document.createElement("h3")
     h3.innerText="Jobs related to search ...";
     let cont2 = document.createElement("div");
-    cont2.className="cont2_1_vw";
-    let cont3 = document.createElement("div");
-    cont3.className="cont2_1_1_vw";
-    let cont4 = document.createElement("div");
-    cont4.className="cont2_1_2";
-    let imgg = document.createElement("img");
-    imgg.src=ele.img;
-
-    let cont5 = document.createElement("div");
-    cont5.className="cont2_1-1";
-    let p1 = document.createElement("p");
+     cont2.className="cont2_1_vw";
+     let cont3 = document.createElement("div");
+     cont3.className="cont2_1_1_vw";
+     let cont4 = document.createElement("div");
+     cont4.className="cont2_1_2";
+     let imgg = document.createElement("img");
+     imgg.src=ele.img
+     let cont5 = document.createElement("div");
+     cont5.className="cont2_1-1";
+     let p1 = document.createElement("p");
     p1.setAttribute("id","jobPost")
     p1.innerText=ele.post
     let p2 = document.createElement("p");

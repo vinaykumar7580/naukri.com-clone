@@ -232,7 +232,7 @@ margin: 2px;
     top: 17%;
     border: 1px solid rgb(217, 217, 217);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-     background-color: white;
+    background-color: white;
 
 }
 .right_container>img{
@@ -260,12 +260,14 @@ margin: 2px;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 32%;left: 6%;
-    /* border: 2px solid rgb(0, 55, 255); */
-    width: 87%;
+    top: 31%;left:0%;
+    border-bottom: 1px solid rgb(0, 55, 255);
+    
+    border-top: 1px solid rgb(0, 55, 255);
+    width: 101%;
     height: 30%;
-    border-radius: 10px;
-    opacity: 0.8;
+    /* border-radius: 10px; */
+    opacity: 0.7;
     background-color: rgb(195, 227, 255);
 }
 #wish_count,#wish_desc{
@@ -306,7 +308,7 @@ font-family: cursive;
 .right_container2{
 
     position: absolute;
-    width: 400px;
+    width: 370px;
     margin-top: 30px;
     left: 64%;
     top:73%;
@@ -328,9 +330,9 @@ font-family: cursive;
 
 }
 #Qr_img{
-    width: 85%;
-    height: 89%;
-    margin: 18px 3px 3px 15px;
+    width: 80%;
+    height: 81%;
+    margin: 20px 3px 3px 15px;
 }
 #play_store_logo{
     margin: 20px 15px 0 15px;
