@@ -79,10 +79,18 @@ data.forEach((ele,i)=> {
     btn2.setAttribute("id","p22");
     btn2.innerText="Apply for this JOB !! ";
 
+    let btn1 = document.createElement("button");
+    btn1.className="remove_btn";
+    btn1.innerText="Remove from wishlist";
+    btn1.addEventListener("click",()=>{
+
+        removeCard(ele,i)
+    })
+
     cont4.append(imgg)
     cont5.append(p2,p1)
     cont3.append(cont4,cont5)
-    cont6.append(btn2)
+    cont6.append(btn1,btn2)
     cont2.append(cont3,span1,span2,p3,p4,cont6)
     cont1.append(h3,cont2)
     divv.append(cont1)
@@ -91,5 +99,9 @@ data.forEach((ele,i)=> {
 });
 }
 getData();
+
+function removeCard(ele ,i){
+    console.log(ele ,i);
+}
 
 </script>
