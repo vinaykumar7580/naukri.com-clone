@@ -452,6 +452,8 @@
             font-size: small;
         }
        
+
+        
         #bottomDivButton{
         height: 50px;
         width: 200px;
@@ -465,11 +467,31 @@
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 50px;
+        
         }
         #bottomDivButton:hover{
         cursor: pointer;
         background-color: #98b6fb;
         }
+
+        #bdv_Sc{
+            height: 50px;
+            width: 200px;
+            margin: auto;
+            margin-top: 50px;
+            margin-left: 650px;
+            border: 1px solid #457eff;
+            color: #457eff;
+            background-color: white;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 50px;
+            }
+            #bdv_Sc:hover{
+            cursor: pointer;
+            background-color: #98b6fb;
+            }
 
         #parent{
             height: 500px;
@@ -616,7 +638,7 @@
         }
         #imgu_sc>img{
             width:80%;
-            height:500px;
+            height:200px;
             margin:auto;
             display:flex;
             justify-content: center;
@@ -626,7 +648,7 @@
         }
         #acc_img_sc>img{
             width:80%;
-            height:300px;
+            height:400px;
             margin:auto;
             display:flex;
             justify-content: center;
@@ -721,12 +743,11 @@
      }
 
 
-
      a{
         text-decoration: none;
     }
 
-    #footer_sc{
+    #footer{
         display: grid;
         grid-template-columns: 20% 15% 15% 15% 33%;
         width: 96%;
@@ -735,21 +756,21 @@
         align-items: center;
     
     }
-    #footer_sc > div{
+    #footer > div{
         
         height: 150px;
     }
-    #footer_sc > div > img{
+    #footer > div > img{
         margin-top: 20px;
     }
 
-    #connectUs_sc > p{
+    #connectUs > p{
         color: #445578;
     }
-    .footpcolor_sc > p > a{
+    .footpcolor > p > a{
         color: #445578;
     }
-    #appStore_sc{
+    #appStore{
         margin-left: 20px;
         padding-left: 40px;
         background: #fff;
@@ -757,21 +778,28 @@
         border-radius: 8px;
         
     }
-    #appStore_sc > p:first-child{
+    #appStore > p:first-child{
         font-weight: 600;
         
     }
-    #appStore_sc > p:nth-child(2){
+    #appStore > p:nth-child(2){
         color: #445578;
     }
-    #socailLogo_sc{
-        display: flex;
-        gap: 15px;
+    #socailLogo{
+        display: flex; 
+        gap:5px; 
     }
-    #appLogo_sc {
+    #appLogo {
         display: flex;
         gap: 10px;
     }
-    
-
-   
+    #nau_sc{
+        margin-top: 30px;
+       width:170px;
+    }
+    #logoimgu_sc{
+        width:60px;
+    }
+    #footy_sc{
+        margin-bottom: 60px;
+    }
