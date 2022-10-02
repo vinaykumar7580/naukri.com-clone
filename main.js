@@ -64,7 +64,7 @@ data.forEach((ele,i)=> {
     cont6.className="cont_2_1_1";
 
     let btn1 = document.createElement("button");
-    btn1.innerText="whishlist";
+    btn1.innerText="wishlist";
     btn1.addEventListener("click",()=>{
 
          Add_wishList(ele)

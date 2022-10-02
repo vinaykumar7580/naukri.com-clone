@@ -629,8 +629,8 @@
 
 
 
-            <button id="login"><a href="">Login</a></button>
-            <button id="register"><a href="">Register</a></button>
+            <button id="login"><a href="login.html">Login</a></button>
+            <button id="register"><a href="register.html">Register</a></button>
 
            </li>
 
@@ -703,7 +703,9 @@ function show(){
 
     if(data.user_pass==pass1&&data.user_email==email1){
         alert("Login successful!");
+        
         localStorage.setItem("login",JSON.stringify(res));
+        window.location.href="main.html";
     }
     else if(data.user_pass!=pass1){
         alert("Wrong credentials");
