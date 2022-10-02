@@ -1,7 +1,7 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 .img_banner_vw>img{
     width: 100vw;
     height: 30vh;
@@ -12,14 +12,12 @@
 body{
     overflow-x: hidden;
 }
-.img_banner_vw{ 
-     margin-top: 30px;
-}
+
 .search_job_vw{
     /* border: 1px solid yellow; */
     width: fit-content;
     position: absolute;
-    top: 8%;
+    top: 15%;
     left: 14%;
 
 }
