@@ -629,8 +629,8 @@
 
 
 
-            <button id="login"><a href="login.html">Login</a></button>
-            <button id="register"><a href="register.html">Register</a></button>
+            <button id="login"><a href="">Login</a></button>
+            <button id="register"><a href="">Register</a></button>
 
            </li>
 
@@ -675,7 +675,7 @@
               <p id="p">Password</p>
               <input type="password" id="pass1" placeholder="Enter Password">
              <p id="f">Forgot Password?</p>
-             <button id="submit">Login</button>
+             <button id="submit" onclick="show()">Login</button>
              <p id="u"><a href="https://www.naukri.com/nlogin/login">Use OTP to Login</a></p>
 
              <button id="s" onclick="google()"><img src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif" alt=""></button>
@@ -691,4 +691,27 @@ function google(){
 window.location.href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp";
 }
     
+
+
+let data=JSON.parse(localStorage.getItem("data"))||[];
+
+
+function show(){
+    let res=true;
+    let email1=document.getElementById("email1").value;
+    let pass1=document.getElementById("pass1").value;
+
+    if(data.user_pass==pass1&&data.user_email==email1){
+        alert("Login successful!");
+        localStorage.setItem("login",JSON.stringify(res));
+    }
+    else if(data.user_pass!=pass1){
+        alert("Wrong credentials");
+    }
+    else if(data.uesr_email!=email1){
+        alert("User doesn't exist, Sign Up");
+    }
+
+    
+}
 </script>
