@@ -75,6 +75,10 @@ data.forEach((ele,i)=> {
     let btn2 = document.createElement("button");
     btn2.setAttribute("id","p22");
     btn2.innerText="Apply for this JOB !! ";
+    btn2.addEventListener("click", ()=>{
+
+        apply_data(ele)
+    })
 
     cont4.append(imgg)
     cont5.append(p2,p1)
@@ -118,4 +122,9 @@ function wishlist_count(){
     wishList_count++
     display.innerText=wishList_count;
     localStorage.setItem("wish_list_count",JSON.stringify(wishList_count ))
+}
+
+function  apply_data(ele){
+    localStorage.setItem("apply_data",JSON.stringify(ele))
+    window.location.href="apllied.html"
 }
