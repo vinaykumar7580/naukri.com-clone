@@ -25,7 +25,7 @@
                     <div class="row">
                         <header>Popular categories</header>
                          <ul class="Mega-links">
-                             <li><a href="#">IT jobs</a></li>
+                             <li><a href="itjob.html">IT jobs</a></li>
                              <li><a href="#">Sales jobs</a></li>
                              <li><a href="#">Marketing jobs</a></li>
                              <li><a href="#">Data Science jobs</a></li>
@@ -56,7 +56,7 @@
                       <div class="row">
                         <header>Explore more jobs</header>
                          <ul class="Mega-links">
-                             <li><a href="#">Jobs by category</a></li>
+                             <li><a href="jobbycatagory.html">Jobs by category</a></li>
                              <li><a href="#">Jobs by skill</a></li>
                              <li><a href="#">Jobs by location</a></li>
                              <li><a href="#">Jobs by designation</a></li>
@@ -243,27 +243,38 @@
 
 
 
-        <button id="login"><a href="">Login</a></button>
-        <button id="register"><a href="">Register</a></button>
+        <button id="login"><a href="login.html">Login</a></button>
+        <button id="register"><a href="register.html">Register</a></button>
 
        </li>
 
 
 
 
-        <li><select id="employer">
+    
+            <div class="row">
+
+                <header><a href="./hiring_sol.html">Our hiring solutions</a></header>
+            <!-- <ul id="Mega-links">
+                <li><a href="#">Buy online</a></li>
+                <li></li>
+                <li><a href="#">Employer Login</a></li>
+            </ul> -->
+            </div>
+            
+            <!-- <select id="employer" onchange="SelectData()">
             <option>For employer</option>
             <option>Buy online</option>
-            <option>Our hiring solutions</option>
-            <option>Employer Login</option>
+            <option value="hiring">Our hiring solutions</option>
+            <option> <a href="#">Employer Login</a> </option> -->
          
             
-           </select>
+           <!-- </select> -->
             
-            </li>
+         <!-- </li> -->
 
-        </ul>
-    </div>
+        
+            </div>
     </nav>
 
 
@@ -655,7 +666,15 @@
 
 </body>
 </html>
-<script></script>
+<script>
+    let employer=document.querySelector("#employer").value ;
+
+    let SelectData=()=>{
+        if(employer=="hiring"){
+            window.location.href="hiring_sol.html";
+        }
+    }
+</script>
 
 
 
