@@ -6,10 +6,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./companies.css">
+    <style>
+      /* *{
+    margin:0;
+    padding:0;
+} */
+nav{
+    height:80px;
+    width: 90%;
+    /* border:1px solid; */
+    position:relative;
+   
+    /* overflow: hidden; */
+}
+#logo{
+
+    height:40px;
+    width:200px;
+    position:absolute;
+    top:15px;
+    left:90px;
+    
+}
+#opt-nav{
+    display:flex;
+    gap:30px;
+    position: absolute;
+    left:400px;
+    top:30px;
+}
+#opt-nav>h3{
+    font-size: 17px;
+    line-height: 20px;;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration:none solid rgb(27, 36, 55);
+    color:#8292b4;
+}
+#login{
+    position:absolute;
+    right:-100px;
+    top:20px;
+}
+#login>button{
+    color:#457eff;
+    color:rgb(69, 126, 255);
+    font-size: 16px;
+    line-height: 20px;;
+    letter-spacing: normal;
+    font-weight: 600;
+    padding:8px 20px;
+    border-radius: 35px;
+    border:1px solid#457eff;;
+    display: inline;
+}
+#login :nth-last-child(1)
+{
+  border:none;
+  color:white;
+  background-color:#ff7555 ;
+}
+#employ{
+    position :absolute;
+    right:150px;
+    top:20px;
+}
+#employ>select{
+    padding:8px ;
+    border:none;
+    font-size: 16px;
+    line-height: 20px;;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration:none solid rgb(27, 36, 55);
+    color:#8292b4;
+    text-align: center;
+}
+.jobs{
+    width:800px;
+    height:250px;
+    /* border:1px solid; */
+    position:absolute;
+    top:45px;
+    left:-100px;
+    display:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex ;
+    background-color: white;
+}
+
+#explore{
+    width:200px;
+    height:200px;
+    border-right:1px solid #a19f9d;
+    line-height: 30px;
+    color: #8292b4;
+    margin:20px 20px;
+    cursor: pointer;
+} 
+
+#location{
+    width:200px;
+    height:200px;
+    line-height: 30px;
+    color: #8292b4;
+    margin:20px 20px;
+    cursor: pointer;
+}
+#job{
+    cursor: pointer;
+    
+}
+#location>h3:nth-child(1)
+{
+    color:rgba(0, 0, 0, 0.616);
+}
+#explore>h3:nth-child(1)
+{
+    color:rgba(0, 0, 0, 0.616);
+}
+
+.company{
+    width:800px;
+    height:250px;
+    position:absolute;
+    top:45px;
+    left:-100px;
+    display:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex ;
+    background-color: white;
+    
+}
+#comp{
+    cursor:pointer;
+}
+#Services{
+    cursor:pointer;
+}
+.service{
+    width:800px;
+    height:250px;
+    position:absolute;
+    top:45px;
+    left:-100px;
+    display:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex ;
+    background-color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+    </style>
 </head>
 <body>
-    <nav id="pav">
 
+    <nav id="pav">
+      <div id="logo">
+        <img height="100%" width="100%" src="https://techstory.in/wp-content/uploads/2015/08/Naukri-Logo.jpg">
+    </div>
+    <div id="opt-nav">
+       <h3 id="job">Jobs</h3>
+        <div class="jobs">
+            <div id="explore">
+                <h3>Popular categories</h3>
+                <a href="#"><h4>IT jobs</h4></a>
+                <h4>Sales jobs</h4>
+                <h4>Marketing jobs</h4>
+                <h4>Data Science jobs</h4>
+                <h4>HR jobs</h4>
+                <h4>Engineering jobs</h4>
+            </div>
+            <div id="explore">
+                <h3>Jobs in demand</h3>
+                <h4>Fresher jobs</h4>
+                <h4>MNC Jobs</h4>
+                <h4>Remote jobs</h4>
+                <h4>Work from home jobs</h4>
+                <h4>Walk-in jobs</h4>
+            </div>
+            <div id="explore">
+                <h3>Explore more jobs</h3>
+                <h4>Jobs by category</h4>
+                <h4>Jobs by skill</h4>
+                <h4>Jobs by designation</h4>
+                <h4>Jobs by location</h4>
+                <h4>Create free job alert</h4>
+            </div>
+            <div id="location">
+                <h3>Jobs by location</h3>
+                <h4>Jobs in Delhi</h4>
+                <h4>Jobs in Mumbai</h4>
+                <h4>Jobs in Bangalore</h4>
+                <h4>Jobs in Hyderabad</h4>
+                <h4>Jobs in Chennai</h4>
+                <h4>Jobs in pune</h4>
+            </div>
+        </div>
+        <h3 id="comp">Companies</h3>
+        <div class="company">
+            <div id="explore">
+                <h3>Explore categories</h3>
+                <a href="./companies.html"><h4>Unicorn</h4></a>
+                <h4>MNCs</h4>
+                <h4>Startup</h4>
+                <h4>Product based</h4>
+                <h4>Internet</h4>
+            </div>
+            <div id="explore">
+                <h3>Explore collection</h3>
+                <h4>Top Companies</h4>
+                <h4>Fintech Companies</h4>
+                <h4>Edtech Companies</h4>
+                <h4>Fetured Companies</h4>
+                <h4>Sponsered Companies</h4>
+            </div>
+            <div id="location">
+                <h3>Research Companies</h3>
+                <h4>Interview questions</h4>
+                <h4>company salaries</h4>
+                <h4>About Companies</h4>
+                <h4>Company reviews</h4>
+            </div>
+        </div>
+        <h3 id="Services">Services</h3>
+        <div class="service">
+            <div id="explore">
+                <h3>Resume writing</h3>
+                <h4>visual resume</h4>
+                <h4>Resume critique</h4>
+            </div>
+            <div id="explore">
+                <h3>Get recuruiter's attention</h3>
+                <h4>Recruiter connection</h4>
+                <h4>Job search booster</h4>
+                <h4>Basic & premium plans</h4>
+                <h4>Job4u</h4>
+            </div>
+            <div id="location">
+                <h3>Learn and upskill</h3>
+                <h4>Data Science courses</h4>
+                <h4>Technology courses</h4>
+                <h4>Management courses</h4>
+                <h4>Finance courses</h4>
+            </div>
+        </div>
+        <h3>Resources</h3>
+    </div>
+    <div id="login">
+      <a href=""></a>
+       <a href="#">Login</a>
+        <button>Register</button>
+    </div>
+    <div id="employ">
+        <select name="emp" id="emplo"><option value="/">For employers</option>
+        <option value="/">Post a job</option>
+        <option value="/">Resume database</option>
+        <option value="/">Naukari hiring suite</option>
+        <option value="/">Employer Login</option></select>
+    </div>
     </nav>
     <div id="bk">
         <div id="bk1">
@@ -25,30 +285,30 @@
            <h2>All Filters</h2>
          </div>
          <div class="loc">
-           <h3>By Location :</h3><br>
+           <h3>Company type</h3><br>
            
            <input type="checkbox" name="nagpur" id="nagpur"  />
-          <label for="nagpur" > Nagpur</label><br />
+          <label for="nagpur" > Foreign MNC</label><br />
           <input type="checkbox" name="Amravati" id="Amravati" />
-          <label for="Amravati"> Amravati</label><br />
+          <label for="Amravati"> Corporate </label><br />
           <input type="checkbox" name="gurugaon" id="gurugaon" />
-          <label for="gurugaon"> Gurugaon</label><br />
+          <label for="gurugaon"> Indian MNC </label><br />
           <input type="checkbox" name="noida" id="noida" />
-          <label for="gurugaon"> Noida</label><br />
+          <label for="gurugaon">Startup</label><br />
            <button onclick="check(event)" id="sub">Submit</button>
          </div>
          
          <div class="loc">
-          <h3>By Company :</h3><br>
+          <h3>Industry</h3><br>
            
           <input type="checkbox" name="tcs" id="tcs"  />
-         <label for="tcs" > Tata Consulty Services</label><br />
+         <label for="tcs" >IT Services & Consulting</label><br />
          <input type="checkbox" name="MDS" id="MDS" />
-         <label for="MDS"> MDS Facilities</label><br />
+         <label for="MDS">Software Product</label><br />
          <input type="checkbox" name="coal" id="coal" />
-         <label for="coal"> COAL India</label><br />
+         <label for="coal">E-Learning / EdTech</label><br />
          <input type="checkbox" name="victor" id="victor" />
-         <label for="victor"> Victorious Infotech Pvt. Ltd</label><br />
+         <label for="victor">Internet</label><br />
           <button onclick="gocomp(event)" id="sub">Submit</button>
         </div>
     </div>
