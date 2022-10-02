@@ -484,3 +484,23 @@ transition: 0.3s ease-in-out;
     height: 99%;
     opacity: 0.7;
 }
+
+#other_details_vw{
+    /* border: 1px solid red; */
+    width: fit-content;
+    position: absolute;
+    margin-top:10px;
+    width: 300px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(109, 155, 205);
+    padding: 8px 0 8px 10px;
+}
+#other_details_vw>h4{
+     font-family: sans-serif;
+margin-top: 6px;
+
+}
+#wish_desc>h4:nth-child(1){
+    margin-top: 35px;
+}

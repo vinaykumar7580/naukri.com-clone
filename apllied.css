@@ -1,0 +1,119 @@
+*{
+    margin: 0;padding: 0;
+}
+.blue_bg{
+    height: 12vh;
+    background-color: rgb(165, 228, 255);
+    opacity: 0.8;
+    width: 100%;
+    margin-top: 80px;
+}
+body{
+    overflow-y: hidden;
+}
+.left_cont1_vw{
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    /* border: 1px solid; */
+    position: absolute;
+    top: 18%;
+    left: 6%;
+    background-color: white;
+    width: fit-content;
+    padding: 15px;
+    padding-right: 106px;
+    opacity: 0.9;
+}
+.Time_and_venue{
+    margin: 15px;
+    font-size: 13px;
+    color: rgb(85, 85, 85);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:5px;
+}
+.Time_and_venue>ul{
+    margin-top: 10px;
+}
+li{
+    padding-top: 5px;
+}
+#q_aply_btn{
+    width: 250px;
+    height: 30px;
+    margin: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: rgb(51, 51, 51);
+    background-color: rgb(13, 168, 224);
+
+}
+#q_aply_btn:hover{
+    color: black;
+    background-color: rgb(118, 189, 255);
+}
+.left_img_vw{
+    /* border: 1px solid red; */
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+
+    height: 35vh;
+    margin-top: 285px;
+    margin-left: 92px;
+    
+}
+img{
+    width: 100%;
+    filter: contrast(1);
+    filter: saturate(4);
+    
+}
+.right_div_vw{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    position: absolute;
+    /* border: 1px solid; */
+    left: 52%;
+    width: fit-content;
+    padding: 20px;
+    padding-right: 65px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    top: 17%;
+    background-color: white;
+    opacity: 0.9;
+
+}
+.right_div_vw>h3{
+    margin-bottom: 12px;
+    color: rgb(1, 98, 183);
+}
+.right_div_vw>button{
+    width: 250px;
+    height: 30px;
+    margin: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: rgb(51, 51, 51);
+    background-color: rgb(13, 168, 224);
+    float:right;
+   
+}
+#ul1 ,#ul2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(69, 69, 69);
+}
+#com_name_vw{
+    color: rgb(0, 103, 188);
+    font-weight: bolder;
+    font-size: 21px;
+    text-shadow: rgb(1, 98, 183);
+    margin-right: 10px;
+}
