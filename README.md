@@ -14,7 +14,7 @@ This is a collaborative Project from Masai School in the Construct Week develope
 ---
 Naukri.com is a recruitment platform that provides hiring-related services to corporates/recruiters, placement agencies, and job seekers in India and overseas. It offers multiple products like Resume Database Access, Job Listings, and Response Management Tools.
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTgFsgWKjUfJ11bkOW3xbuaorLp5pO1yoPA&usqp=CAU"/>
+<img style:{width=80%, height=200px} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTgFsgWKjUfJ11bkOW3xbuaorLp5pO1yoPA&usqp=CAU"/>
 
 💫Tech & Tools Used :
 ---
