@@ -8,34 +8,29 @@ This is a collaborative Project from Masai School in the Construct Week develope
 
 3. Devendra Kumar
 
-4. 
+4. Samruddhi
 
-
-💻Project Unique Name :- Masai Cosmetics ✈️
+5. Nilesh
 ---
-About SUGAR COSMETICS:- SUGAR Cosmetics, a cult-favourite amongst Gen Z and millennials, is one of the fastest-growing premium beauty brands in India. With its clutter-breaking persona, signature low-poly packaging and chart-topping products, SUGAR is the makeup of choice for bold, independent women who refuse to be stereotyped into roles.
+Naukri.com is a recruitment platform that provides hiring-related services to corporates/recruiters, placement agencies, and job seekers in India and overseas. It offers multiple products like Resume Database Access, Job Listings, and Response Management Tools.
 
-<img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fa7bfdf05-ad0e-4c24-ab48-7ff64e9115b8.jpg&w=1920&q=75"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTgFsgWKjUfJ11bkOW3xbuaorLp5pO1yoPA&usqp=CAU"/>
 
 💫Tech & Tools Used :
 ---
 
-For Frontend : HTML5, CSS3, Javascript, JS6, ReactJS Redux.
+For Frontend : HTML5, CSS3, Javascript.
 
-For database: Json Server (cyclic).
-
-Chakra UI (UI Styling Library) Styled-Components.
-
-For authentication: Google firebase authentication.
+For database: Json Server.
+  
+Tools: Netlify
 
 ---
 
 
 
 ---
-Deployed Link : https://masai-cosmetics.netlify.app/
-
-Project Presentation : https://drive.google.com/file/d/1ApSjdmJpv5J4WRk7N0l5rX0jccfM1ncq/view?usp=sharing
+Deployed Link : https://astounding-pie-721745.netlify.app/
 
 ----
 <h1 align="center">✨Thank You✨</h1>
